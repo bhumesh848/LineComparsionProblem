@@ -10,12 +10,24 @@ public class LineComparison {
         Double lengthOfLine2 = getLengthOfLine();
         System.out.println("Length of line 2 is " + lengthOfLine2);
 
-       if (lengthOfLine1.equals(lengthOfLine2)){
-           System.out.println("Two lines are equal");
-       }else {
-           System.out.println("Two lines are not equal");
-       }
+//       if (lengthOfLine1.equals(lengthOfLine2)){
+//           System.out.println("Two lines are equal");
+//       }else {
+//           System.out.println("Two lines are not equal");
+//       }
+
+        int result = Double.compare(lengthOfLine1,lengthOfLine2);
+        if (result == 0){
+            System.out.println("Two Lines are equal");
+        } else if (result < 0) {
+            System.out.println("Line 1 is smaller then line 2");
+        }
+        else {
+            System.out.println("Line 1 is greater then line 2");
+        }
     }
+
+
     private static double getLengthOfLine() {
         System.out.println("Enter x1 coordinate point and y1");
         Scanner sc = new Scanner(System.in);
