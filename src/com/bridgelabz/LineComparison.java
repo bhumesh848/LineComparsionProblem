@@ -10,11 +10,6 @@ public class LineComparison {
         Double lengthOfLine2 = getLengthOfLine();
         System.out.println("Length of line 2 is " + lengthOfLine2);
 
-//       if (lengthOfLine1.equals(lengthOfLine2)){
-//           System.out.println("Two lines are equal");
-//       }else {
-//           System.out.println("Two lines are not equal");
-//       }
 
         int result = Double.compare(lengthOfLine1,lengthOfLine2);
         if (result == 0){
